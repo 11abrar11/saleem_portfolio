@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Saleem - Senior UI/Visual Designer</title>
+    <meta name="description" content="Portfolio of Mohammed Saleem, a Senior Graphic/Visual Designer, UI Designer, and Quality Analyst based in Bangalore.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Fixed Background Grid -->
+    <div class="grid-background"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">Saleem.</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active" data-index="0">Home</a></li>
+            <li><a href="#about" data-index="1">About</a></li>
+            <li><a href="#resume" data-index="2">Resume</a></li>
+            <li><a href="#skills" data-index="3">Skills</a></li>
+            <li><a href="#portfolio" data-index="4">Portfolio</a></li>
+            <li><a href="#testimonials" data-index="5">Testimonials</a></li>
+            <li><a href="#contact" data-index="6">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main GSAP Scroll Trigger height provider -->
+    <div class="scroll-container">
+        
+        <!-- The Infinite Canvas Viewport -->
+        <div class="canvas-viewport">
+            
+            <!-- The Moving Canvas -->
+            <main class="canvas" id="canvas">
+                
+                <!-- 1. HOME -->
+                <section class="artboard scene-home" id="home">
+                    <div class="artboard-content outline-box color-home">
+                        <div class="profile-photo-container">
+                            <div class="profile-photo-placeholder">Photo Placeholder</div>
+                        </div>
+                        <div class="title-group">
+                            <h1 class="main-title">Mohammed Saleem</h1>
+                            <p class="subtitle">Visual Designer | UI Designer | Quality Analyst</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. ABOUT -->
+                <section class="artboard scene-about" id="about">
+                    <div class="artboard-content color-about">
+                        <div class="layout-guides"></div>
+                        <div class="about-text-container">
+                            <h2>Professional Summary</h2>
+                            <p class="about-line">Dynamic and creative Graphic Designer with a passion for crafting engaging visual experiences and intuitive user interfaces.</p>
+                            <p class="about-line">Seeking a challenging role as a Senior Graphic/Visual Designer, UI Designer, and Quality Analyst where I can leverage my creativity, technical expertise, and strategic thinking to deliver impactful design solutions.</p>
+                            <p class="about-line">With a proven track record of delivering high-quality design projects across multiple platforms, I bring strong attention to detail in layout, typography, color, and overall visual consistency. I am eager to contribute my skills to a forward-thinking team that values innovation and design excellence.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. RESUME -->
+                <section class="artboard scene-resume" id="resume">
+                    <div class="artboard-content color-resume">
+                        <h2>Experience Timeline</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>Visual Designer (Associate Level 4)</h3>
+                                    <h4>Deloitte <span>(Merged with Ad2pro on Nov 2021)</span></h4>
+                                    <p class="date">2021 - Present</p>
+                                    <p class="desc">Projects: Newsquest (UK-based client). Designed creative and professional banner cut layouts, developed visually compelling, brand-aligned designs.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>Quality Analyst</h3>
+                                    <h4>Ad2pro Global Creative Solution Pvt Ltd</h4>
+                                    <p class="date">2017 - 2021</p>
+                                    <p class="desc">Projects: DMOD (US client). Focused on ensuring high-quality design outputs aligned with brand standards. Performed detailed quality checks on layout spacing, SOP compliance, color, typography, etc.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>Executive Designer</h3>
+                                    <h4>Ad2pro Global Creative Solution Pvt Ltd</h4>
+                                    <p class="date">2015 - 2017</p>
+                                    <p class="desc">Projects: Gatehouse Media, McClatchy (US client). Ensured high-quality design outputs, detailed quality checks.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h3>Junior Designer</h3>
+                                    <h4>Macmillan Mps Ltd</h4>
+                                    <p class="date">2014 - 2015</p>
+                                    <p class="desc">Projects: LIM. Designed Yellow Pages layouts using InDesign, developed reusable templates in Illustrator.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. SKILLS / TOOLS -->
+                <section class="artboard scene-skills" id="skills">
+                    <div class="skills-wrapper">
+                        <div class="toolbar">
+                            <div class="tool-icon ps" data-label="Photoshop">Ps</div>
+                            <div class="tool-icon ai" data-label="Illustrator">Ai</div>
+                            <div class="tool-icon id" data-label="InDesign">Id</div>
+                            <div class="tool-icon an" data-label="Animate">An</div>
+                            <div class="tool-icon fg" data-label="Figma">Fg</div>
+                            <div class="tool-icon xd" data-label="Adobe XD">Xd</div>
+                        </div>
+                        <div class="artboard-content skills-content color-skills">
+                            <h2>Design System Areas</h2>
+                            <div class="skills-grid">
+                                <div class="skill-block hover-snap">
+                                    <h3>Typography</h3>
+                                    <p>Understanding of typography principles and best practices.</p>
+                                </div>
+                                <div class="skill-block hover-snap">
+                                    <h3>Layout</h3>
+                                    <p>Grid systems and structured alignment.</p>
+                                </div>
+                                <div class="skill-block hover-snap">
+                                    <h3>Color</h3>
+                                    <p>Strong color balance and visual consistency.</p>
+                                </div>
+                                <div class="skill-block hover-snap">
+                                    <h3>UI Design</h3>
+                                    <p>Professional mobile UI and dashboard designs.</p>
+                                </div>
+                                <div class="skill-block hover-snap">
+                                    <h3>Creativity</h3>
+                                    <p>Innovative design solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. PORTFOLIO -->
+                <section class="artboard scene-portfolio" id="portfolio">
+                    <div class="artboard-content color-portfolio">
+                        <div class="portfolio-header">
+                            <h2>Projects Showcase</h2>
+                            <p class="portfolio-desc">A collection of my recent work in UI/UX and Visual Design.</p>
+                        </div>
+                        
+                        <div class="portfolio-grid mass-grid">
+                            <!-- We generate 12 project placeholders -->
+                            <!-- Project 1 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Mobile UI Dashboard</h3><p>Figma & Adobe XD</p></div>
+                            </div>
+                            <!-- Project 2 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Brand Banner Layouts</h3><p>Photoshop & Illustrator</p></div>
+                            </div>
+                            <!-- Project 3 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>E-Commerce Web App</h3><p>Figma</p></div>
+                            </div>
+                            <!-- Project 4 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Fintech Dashboard</h3><p>Adobe XD</p></div>
+                            </div>
+                            <!-- Project 5 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Marketing Collateral</h3><p>InDesign</p></div>
+                            </div>
+                            <!-- Project 6 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Social Media Assets</h3><p>Photoshop</p></div>
+                            </div>
+                            <!-- Project 7 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Healthcare Portal UI</h3><p>Figma</p></div>
+                            </div>
+                            <!-- Project 8 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Corporate Branding</h3><p>Illustrator</p></div>
+                            </div>
+                            <!-- Project 9 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Travel App Design</h3><p>Adobe XD</p></div>
+                            </div>
+                            <!-- Project 10 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Product Landing Page</h3><p>Figma</p></div>
+                            </div>
+                            <!-- Project 11 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Interactive Prototype</h3><p>Figma</p></div>
+                            </div>
+                            <!-- Project 12 -->
+                            <div class="project-card" data-cursor-text="View">
+                                <div class="project-image-container"></div>
+                                <div class="project-info"><h3>Digital Magazine</h3><p>InDesign</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. TESTIMONIALS -->
+                <section class="artboard scene-testimonials" id="testimonials">
+                    <div class="artboard-content color-testimonials">
+                        <h2>Feedback</h2>
+                        <div class="testimonial-grid">
+                            <div class="testimonial-card">
+                                <p class="quote">"Mohammed's attention to detail as a Quality Analyst significantly elevated our design outputs."</p>
+                                <p class="author">- Ad2pro Global</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <p class="quote">"Exceptional layout composition and brand-aligned designs. A true asset to the creative team."</p>
+                                <p class="author">- Deloitte Newsquest Team</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 7. CONTACT -->
+                <section class="artboard scene-contact" id="contact">
+                    <div class="artboard-content minimal-contact color-contact">
+                        <h2 class="final-line">Let's create work that stands the test of time.</h2>
+                        
+                        <div class="contact-info">
+                            <p><strong>Email:</strong> <a href="mailto:mohammedhg0612@gmail.com" class="magnetic">mohammedhg0612@gmail.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:9900574565" class="magnetic">9900574565</a></p>
+                            <p><strong>Location:</strong> Bommanahalli, Bangalore</p>
+                        </div>
+
+                        <a href="https://www.behance.net/saleemhg06" target="_blank" class="btn magnetic">View Behance Portfolio</a>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Load GSAP for smooth animations, ScrollTrigger for scroll-linked animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
