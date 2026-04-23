@@ -350,7 +350,7 @@ p { font-size: 1.05rem; color: var(--text-secondary); }
 .author { font-size: 1rem; font-weight: 700; color: var(--accent-blue-text); }
 
 /* 7. Contact */
-.minimal-contact { text-align: center; max-width: 600px; }
+.minimal-contact { text-align: center; max-width: 600px; overflow: hidden; }
 .final-line { font-size: 3rem; margin-bottom: var(--sp-6); color: #fff; line-height: 1.2; }
 .contact-info { margin-bottom: var(--sp-6); background: rgba(255,255,255,0.05); padding: var(--sp-4); border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); }
 .contact-info p { margin-bottom: var(--sp-2); font-size: 1.2rem; color: rgba(255,255,255,0.9); }
