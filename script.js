@@ -136,6 +136,15 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
+            
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinksContainer = document.querySelector('.nav-links');
+            if (mobileMenu && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                navLinksContainer.classList.remove('nav-open');
+            }
+
             const index = parseInt(link.getAttribute('data-index'));
             const totalScrollHeight = scrollContainer.scrollHeight - window.innerHeight;
             const sectionsCount = waypoints.length;
@@ -163,4 +172,17 @@ document.addEventListener('DOMContentLoaded', () => {
             follower.classList.remove('light-mode');
         }
     }, 100);
+
+    // --------------------------------------------------------
+    // Mobile Hamburger Menu
+    // --------------------------------------------------------
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navLinksContainer.classList.toggle('nav-open');
+        });
+    }
 });
