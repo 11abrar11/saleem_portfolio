@@ -289,17 +289,10 @@ p { font-size: 1.05rem; color: var(--text-secondary); }
 
 /* 4. Skills & Tools */
 .scene-skills .artboard { padding-top: 120px; }
-.skills-wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--sp-6);
-    max-width: 1200px;
-    width: 100%;
-}
 .toolbar {
-    display: flex; flex-direction: column; gap: var(--sp-2);
-    background: rgba(255,255,255,0.9); padding: var(--sp-3); border: 1px solid rgba(255,255,255,1);
-    border-radius: 16px; box-shadow: var(--shadow-hover); backdrop-filter: blur(10px);
+    display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: var(--sp-4);
+    background: rgba(255,255,255,0.4); padding: var(--sp-3); border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 16px; margin-bottom: var(--sp-6);
 }
 .tool-icon {
     width: 54px; height: 54px; display: flex; align-items: center; justify-content: center;
@@ -387,9 +380,13 @@ p { font-size: 1.05rem; color: var(--text-secondary); }
     .final-line { font-size: 2rem; }
 
     /* Fix flex layouts breaking */
-    .skills-wrapper { flex-direction: column; align-items: stretch; }
-    .toolbar { flex-direction: row; flex-wrap: wrap; justify-content: center; width: 100%; margin-bottom: var(--sp-4); }
+    .toolbar { gap: var(--sp-2); }
     .tool-icon { width: 44px; height: 44px; font-size: 0.9rem; }
+    
+    /* Reduce extreme rotations on mobile so cards are legible even during transition */
+    .artboard-content {
+        transform: rotateX(2deg) rotateY(-2deg) rotateZ(1deg) scale(0.95);
+    }
     
     /* Grid fallback */
     .portfolio-grid.mass-grid, .testimonial-grid { grid-template-columns: 1fr; }
