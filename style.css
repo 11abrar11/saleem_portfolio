@@ -156,14 +156,14 @@ body {
     padding-top: 80px; /* offset navbar */
 }
 
-/* STRICT GRID LAYOUT: NO OVERLAP */
+/* STRICT GRID LAYOUT: NO OVERLAP (150vw/vh for extra spacing and mobile safety) */
 .scene-home { top: 0; left: 0; }
-.scene-about { top: 0; left: 100vw; }
-.scene-resume { top: 100vh; left: 100vw; }
-.scene-skills { top: 100vh; left: 0; }
-.scene-portfolio { top: 100vh; left: -100vw; }
-.scene-testimonials { top: 0; left: -100vw; }
-.scene-contact { top: -100vh; left: -100vw; }
+.scene-about { top: 0; left: 150vw; }
+.scene-resume { top: 150vh; left: 150vw; }
+.scene-skills { top: 150vh; left: 0; }
+.scene-portfolio { top: 150vh; left: -150vw; }
+.scene-testimonials { top: 0; left: -150vw; }
+.scene-contact { top: -150vh; left: -150vw; }
 
 .artboard-content {
     max-width: 1000px;
@@ -355,29 +355,11 @@ p { font-size: 1.05rem; color: var(--text-secondary); }
 }
 .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255,255,255,0.2); }
 
-/* Mobile Layout (Standard Vertical Scroll) */
+/* Mobile Layout Enhancements (Retaining Spatial Animations) */
 @media (max-width: 1023px) {
-    /* Reset spatial canvas */
-    .scroll-container { height: auto !important; }
-    .canvas-viewport { position: relative; overflow: visible; height: auto; }
-    .canvas { position: relative; transform: none !important; height: auto; overflow: visible; }
+    /* Allow the spatial engine to run, just fix internal layout scaling */
     
-    /* Stack artboards */
-    .artboard { 
-        position: relative; 
-        top: 0 !important; 
-        left: 0 !important; 
-        height: auto; 
-        min-height: 100vh; 
-        padding-top: 100px; /* Offset for navbar */
-        padding-bottom: 40px;
-    }
-    
-    /* Reset card transforms and scrolling */
     .artboard-content { 
-        transform: none !important; 
-        max-height: none; 
-        overflow: visible; 
         padding: var(--sp-4);
         border-radius: 12px;
     }
